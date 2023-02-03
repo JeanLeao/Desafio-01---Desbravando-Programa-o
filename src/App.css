@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+* {
+    margin: 0px;
+
+}
+.nav{
+    background-color: #FEF6DE;
+}
+.ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    justify-content: right;
+}
+.li{
+    font-size: 15px;
+    font-weight: 700;
+    color:rgba(0, 0, 0, 0.55);
+    margin-right: 40px;
+    list-style-type: none;
+}
+.li:hover{
+    cursor: pointer;
+    color:rgba(0, 0, 0, 1);
+
+}
+.button-layout{
+    border: solid 1px rgba(0, 62, 60, 0.91);
+    border-radius: 7px;
+    margin-bottom: 45px;
+    color: rgba(0, 62, 60, 0.91);
+    background-color: rgba(255, 255, 255, 0);
+    padding: 7px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.button-layout:hover{
+    cursor: pointer;
+    border: solid 1px rgba(255, 255, 255, 0.91);
+    border-radius: 7px;
+    margin-bottom: 45px;
+    color: rgba(255, 255, 255, 0.91);
+    background-color: rgba(0, 62, 60, 0.91);
+    padding: 7px;
+}
+.objectList{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+.objectItemOne{
+    display: flex;
+    width: min-content;
+    flex-direction: column;
+    margin-left: 25%;
+    margin-right: 6%;
+    margin-bottom: 130px;
+}
+.TitleObjects{
+    color: rgba(0, 62, 60, 1);
+    min-width: 102%;
+    margin-bottom: 30px;
+}
+.ParagrahpObjects{
+    min-width: 132%;
+}
+.hamburguer-bar{
+    padding: 15px;
+    border-radius: 50px;
+    background-color: rgba(0, 62, 60, 0.81);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.menu-table{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+h3{
+    color: #fff;
+    margin-bottom: 5px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h3:hover{
+    color: #808080;
+    cursor: pointer;
+}
+#board-menu-navigation{
+    display: block;
+    height: 127%;
+    width: 111%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index:2
 }
