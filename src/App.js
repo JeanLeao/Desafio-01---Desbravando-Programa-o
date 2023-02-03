@@ -60,7 +60,7 @@ function App() {
   function ShowMenuFunction(){
     const geral = document.getElementById('body');
     setShowMenu(!showMenu);
-    if (showMenu == false){
+    if (showMenu === false){
       geral.style.overflowY = 'hidden';
     }else{
       geral.style.overflowY = 'auto';
