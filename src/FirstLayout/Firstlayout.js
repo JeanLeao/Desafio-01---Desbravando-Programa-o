@@ -1,5 +1,6 @@
 import { Container, TitleFirst, Paragrafo,Containerleft } from "./Firstlayoutstyle";
 import './first.css';
+import caraestiloso from '.././images/caraestiloso.png';
 function Firstlayout() {
 
   return (
@@ -13,7 +14,7 @@ function Firstlayout() {
         </Containerleft>
         <div className="firstAuto">
             <div className="bolinha">
-              
+              <img src={caraestiloso} style={{height: '300px', marginTop: '-64px', marginLeft: '10px'}}/>
             </div>
         </div>
     </Container>

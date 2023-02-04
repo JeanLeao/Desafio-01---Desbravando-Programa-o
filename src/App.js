@@ -4,36 +4,45 @@ import './App.css';
 import Firstlayout from "./FirstLayout/Firstlayout";
 import Item from './ItensComponent/Item';
 
+//images
+
+import camisaazul from './images/camisaazul.png';
+import camisabranca from './images/camisabranca.png';
+
+import blacksapato from './images/blacksapato.png';
+import sapatobege from './images/sapatobege.png';
+import sapatored from './images/sapatored.png';
+
 function App() {
   const items = [
     {
-      name: "Apple",
+      url: camisabranca,
+      name: "Camisa Branca",
       price: 10,
     },
     {
-      name: "Orange",
+      url: camisaazul,
+      name: "Camisa Azul",
       price: 15,
     },
     {
-      name: "Banana",
+      url: blacksapato,
+      name: "Sapato preto",
       price: 20,
     },
     {
-      name: "Banana",
+      url: sapatobege,
+      name: "Sapato bege",
       price: 20,
     },
     {
-      name: "Banana",
-      price: 20,
-    },
-    {
-      name: "Banana",
+      url: sapatored,
+      name: "Sapato vermelho",
       price: 20,
     }
   ];
 
-
-  //Faça um menu hamburger no react
+  
   const [menu, setMenu] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
   
@@ -44,6 +53,8 @@ function App() {
       setMenu(true);
     } 
   }, []);
+
+  
   
   function UseMenu(){
     if (window.innerWidth < 430){
@@ -70,7 +81,7 @@ function App() {
   return (
     <div  className="App" >
       <div style={{backgroundColor: '#FEF6DE', width: '110%'}}>
-        {menu ? <button id='hamburguer' className="hamburguer-bar" onClick={() => {setShowMenu(!showMenu); ShowMenuFunction();}}> <FontAwesomeIcon icon={'bars-staggered'} style={{color: '#fff', height: '20px'}}/> </button>: null}
+        {menu ? <button id='hamburguer' className="hamburguer-bar" onClick={() => {setShowMenu(!showMenu); ShowMenuFunction();}}>  </button>: null}
       </div>
     
       <nav id='navigation' className='nav'>
@@ -99,7 +110,7 @@ function App() {
           <p className='ParagrahpObjects'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem.</p>
         </div>
         {items.map(item => 
-        <Item url={''} object={item.name} price={item.price} />
+        <Item url={item.url} object={item.name} price={item.price} />
         )}
       </div>
     </div>
