@@ -96,7 +96,7 @@ function App() {
         <div id='board-menu-navigation'>
           <button onClick={ShowMenuFunction} style={{padding: '15px', borderRadius: '50px',backgroundColor: 'rgba(211, 9, 26, 0.741)'}}></button>
           <div className='menu-table'>
-            <div style={{marginTop: '100px', marginLeft: '-10px'}}>
+            <div style={{marginTop: '100px', marginLeft: '-30px'}}>
             <h3 onClick={ShowMenuFunction}>Home</h3>
             <h3 onClick={ShowMenuFunction}>Product</h3>
             <h3 onClick={ShowMenuFunction}>Review</h3>
