@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './App.css';
 import Firstlayout from "./FirstLayout/Firstlayout";
 import Item from './ItensComponent/Item';

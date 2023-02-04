@@ -14,7 +14,7 @@ function Firstlayout() {
         </Containerleft>
         <div className="firstAuto">
             <div className="bolinha">
-              <img src={caraestiloso} style={{height: '300px', marginTop: '-64px', marginLeft: '10px'}}/>
+              <img src={caraestiloso} alt={'imagem'} style={{height: '300px', marginTop: '-64px', marginLeft: '10px'}}/>
             </div>
         </div>
     </Container>
